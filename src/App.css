@@ -1,38 +1,81 @@
-.App {
+.site-container{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 14px;
 }
+body {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+  line-height: 1.5;
+  color: black;
+  margin:0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  border-bottom: 2px solid gray;
+}
+header .title{
+  display: flex;
+  align-items: center;
+}
+.title h1{
+  color: rgb(40, 104, 40);
+}
+.content{
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.card{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 400px;
+  height: auto;
+  margin: 20px 0px;
+}
+.card .info{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  margin: 0px 20px;
+  align-items: center;
+}
+span{
+  font-size: small;
+  font-weight: 100;
+  display: block;
+}
+.card .user-img{
+  height: 180px;
+  width: 100%;
+}
+.card .post-info{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  margin-right: 10px;
+}
+.icons{
+  height: 20px;
+  margin: 5px 10px;
+}
+.post-info span{
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.post-info .date{
+  vertical-align: top;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description{
+  text-align: left;
+  padding:10px ;
+  font-weight:bold ;
 }
