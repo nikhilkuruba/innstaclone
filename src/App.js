@@ -14,7 +14,7 @@ const Postview = () => {
   const [post, setPost] = useState([]);
 
   React.useEffect(() => {
-    fetch("https://instaclonebackend237.herokuapp.com/", {
+    fetch("https://instaclonebackend237.herokuapp.com/post", {
       method: "GET"
     })
       .then((response) => response.json())
