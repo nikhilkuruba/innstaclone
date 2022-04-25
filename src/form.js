@@ -10,7 +10,7 @@ export default function Form() {
   async function Submit(e) {
     e.preventDefault();
     try{
-        const res = await fetch("https://instaclone-237.herokuapp.com/", {
+        const res = await fetch("https://instaclonebackend237.herokuapp.com/post", {
             method: "POST",
             body: JSON.stringify(post),
             headers: {
